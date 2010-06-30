@@ -56,7 +56,7 @@ public class Client {
 		Properties prop = new Properties();
 		FileInputStream inputFileStream = null;
 		try {
-			inputFileStream = new FileInputStream("client.properties");
+			inputFileStream = new FileInputStream("client.conf");
 			prop.load(inputFileStream);
 		} catch (Exception e) {
 		} finally {
@@ -66,7 +66,7 @@ public class Client {
 			}
 		}
 		PropertyConfigurator.configureAndWatch(prop.getProperty(
-				"log4j.configuration", "client.properties"));
+				"log4j.configuration", "client.conf"));
 
 		SocketChannel channel = new SocketChannel();
 		channel.setHost(prop.getProperty("server.ip", "127.0.0.1"));

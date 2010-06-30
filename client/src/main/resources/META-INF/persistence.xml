@@ -13,11 +13,9 @@
 			<property name="javax.persistence.jdbc.user" value=""/>
 			<property name="javax.persistence.jdbc.password" value=""/>
 
-			<!--
 			<property name="eclipselink.jdbc.read-connections.min" value="1" />
 			<property name="eclipselink.jdbc.write-connections.min" value="1" />
 			<property name="eclipselink.jdbc.batch-writing" value="JDBC" />
-			-->
 
 			<!-- Logging -->
 			<property name="eclipselink.logging.level" value="FINE" />
@@ -25,8 +23,7 @@
 			<property name="eclipselink.logging.session" value="false" />
 			<property name="eclipselink.logging.thread" value="false" />
 
-
-			<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+			<property name="eclipselink.ddl-generation" value="create-tables"/>
 			<property name="eclipselink.ddl-generation.output-mode" value="database"/>
 		</properties>
 
